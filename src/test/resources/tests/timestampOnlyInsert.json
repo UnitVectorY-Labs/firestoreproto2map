@@ -1,0 +1,13 @@
+{
+  "input": {
+    "protocolBuffer": "CpgBClhwcm9qZWN0cy9maXJlc3RvcmVwcm90bzJqc29uL2RhdGFiYXNlcy8oZGVmYXVsdCkvZG9jdW1lbnRzL3Rlc3RkYXRhL3hJb1JwNm9keU41UjhpSGM3N2trEiAKDnRpbWVzdGFtcEZpZWxkEg5SDAjfuPSuBhCAtJKNARoMCOy49K4GEJijmrUBIgwI7Lj0rgYQmKOatQE="
+  },
+  "output": {
+    "value": {
+      "timestampField": {
+        "seconds": 1708989535,
+        "nanos": 296000000
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "input": {
+    "protocolBuffer": "Cp0BClhwcm9qZWN0cy9maXJlc3RvcmVwcm90bzJqc29uL2RhdGFiYXNlcy8oZGVmYXVsdCkvZG9jdW1lbnRzL3Rlc3RkYXRhL3Y2bFVoaWFkWmY0Y0J4djRWU0Y1EiUKDWdlb3BvaW50RmllbGQSFEISCXZCxQDJXkJAEZsl8rHL6kzAGgwIutr0rgYQmML5gQIiDAi62vSuBhCYwvmBAg=="
+  },
+  "output": {
+    "value": {
+      "geopointField": {
+        "latitude": 36.74050912505929,
+        "longitude": -57.83434128116206
+      }
+    }
+  }
+}

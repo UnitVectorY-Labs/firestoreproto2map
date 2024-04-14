@@ -1,0 +1,25 @@
+{
+  "input": {
+    "protocolBuffer": "CtoBClhwcm9qZWN0cy9maXJlc3RvcmVwcm90bzJqc29uL2RhdGFiYXNlcy8oZGVmYXVsdCkvZG9jdW1lbnRzL3Rlc3RkYXRhL3hIdHRsU05ZYWZoNWR3ZUNNcHJvEmIKCG1hcEZpZWxkElYyVAowCgphcnJheUZpZWxkEiJKIAoOUgwIitX0rgYQgKPMwQEKDlIMCJXV9K4GEMCL7YgBCiAKDnRpbWVzdGFtcEZpZWxkEg5SDAj51PSuBhCAg4qjARoMCLbV9K4GEJis/7wBIgwIttX0rgYQmKz/vAE="
+  },
+  "output": {
+    "value": {
+      "mapField": {
+        "arrayField": [
+          {
+            "seconds": 1708993162,
+            "nanos": 406000000
+          },
+          {
+            "seconds": 1708993173,
+            "nanos": 287000000
+          }
+        ],
+        "timestampField": {
+          "seconds": 1708993145,
+          "nanos": 342000000
+        }
+      }
+    }
+  }
+}

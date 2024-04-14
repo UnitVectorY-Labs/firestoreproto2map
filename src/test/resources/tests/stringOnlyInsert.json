@@ -1,0 +1,10 @@
+{
+  "input": {
+    "protocolBuffer": "CpMBClhwcm9qZWN0cy9maXJlc3RvcmVwcm90bzJqc29uL2RhdGFiYXNlcy8oZGVmYXVsdCkvZG9jdW1lbnRzL3Rlc3RkYXRhL0hVdDI0cUdMcnY1VWNXMkppQnJoEhsKCXN0cmluZ0tleRIOigELc3RyaW5nVmFsdWUaDAieke+uBhCYoOvBAiIMCJ6R764GEJig68EC"
+  },
+  "output": {
+    "value": {
+      "stringKey": "stringValue"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "input": {
+    "protocolBuffer": "CpwBClhwcm9qZWN0cy9maXJlc3RvcmVwcm90bzJqc29uL2RhdGFiYXNlcy8oZGVmYXVsdCkvZG9jdW1lbnRzL3Rlc3RkYXRhLzRQUzNoSG95Z0VzamQ3Mm4wZVlOEiYKCmFycmF5RmllbGQSGEoWCgkZMzMzMzMz8z8KCRkzMzMzMzMLQBoLCPem9a4GEJia5EoiCwj3pvWuBhCYmuRK"
+  },
+  "output": {
+    "value": {
+      "arrayField": [1.2, 3.4]
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "input": {
+    "protocolBuffer": "CokBClhwcm9qZWN0cy9maXJlc3RvcmVwcm90bzJqc29uL2RhdGFiYXNlcy8oZGVmYXVsdCkvZG9jdW1lbnRzL3Rlc3RkYXRhLzA3NFNTeERTenRYdDl2RnQxcnFyEhIKDGJvb2xlYW5GaWVsZBICCAAaDAipgPCuBhCY87faASILCPCG9a4GEJicjHUSigEKWHByb2plY3RzL2ZpcmVzdG9yZXByb3RvMmpzb24vZGF0YWJhc2VzLyhkZWZhdWx0KS9kb2N1bWVudHMvdGVzdGRhdGEvMDc0U1N4RFN6dFh0OXZGdDFycXISEgoMYm9vbGVhbkZpZWxkEgIIARoMCKmA8K4GEJjzt9oBIgwIqYDwrgYQmPO32gEaDgoMYm9vbGVhbkZpZWxk"
+  },
+  "output": {
+    "value": { "booleanField": false },
+    "oldValue": { "booleanField": true }
+  }
+}

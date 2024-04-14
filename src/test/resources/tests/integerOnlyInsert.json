@@ -1,0 +1,10 @@
+{
+  "input": {
+    "protocolBuffer": "CokBClhwcm9qZWN0cy9maXJlc3RvcmVwcm90bzJqc29uL2RhdGFiYXNlcy8oZGVmYXVsdCkvZG9jdW1lbnRzL3Rlc3RkYXRhL2F6ZTlCZ29SVVk1b3lTWXVzNUdHEhEKC251bWJlckZpZWxkEgIQexoMCNDL764GEJitrJ0CIgwI0MvvrgYQmK2snQI="
+  },
+  "output": {
+    "value": {
+      "numberField": 123
+    }
+  }
+}

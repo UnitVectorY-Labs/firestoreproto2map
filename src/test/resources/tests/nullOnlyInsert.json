@@ -1,0 +1,10 @@
+{
+  "input": {
+    "protocolBuffer": "CocBClhwcm9qZWN0cy9maXJlc3RvcmVwcm90bzJqc29uL2RhdGFiYXNlcy8oZGVmYXVsdCkvZG9jdW1lbnRzL3Rlc3RkYXRhL09hYXZoUVVVa0lkdEY0bWJrbUVXEg8KCW51bGxGaWVsZBICWAAaDAjZgfCuBhCYie2yAyIMCNmB8K4GEJiJ7bID"
+  },
+  "output": {
+    "value": {
+      "nullField": null
+    }
+  }
+}

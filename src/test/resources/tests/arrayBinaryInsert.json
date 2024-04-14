@@ -1,0 +1,14 @@
+{
+  "input": {
+    "protocolBuffer": "CpkBCk9wcm9qZWN0cy9maXJlc3RvcmVwcm90bzJqc29uL2RhdGFiYXNlcy8oZGVmYXVsdCkvZG9jdW1lbnRzL3Rlc3RkYXRhL2JpbmFyeWFycmF5EioKCmJpbmFyeUxpc3QSHEoaChiSARV5b3VyIGJpbmFyeSBkYXRhIGhlcmUaDAjQ0pmvBhCY8+idAiIMCNDSma8GEJjz6J0C"
+  },
+  "output": {
+    "value": {
+      "binaryList": [
+        {
+          "_byteString": "eW91ciBiaW5hcnkgZGF0YSBoZXJl"
+        }
+      ]
+    }
+  }
+}

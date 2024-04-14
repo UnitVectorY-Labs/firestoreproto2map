@@ -1,0 +1,15 @@
+{
+  "input": {
+    "protocolBuffer": "CuQBClhwcm9qZWN0cy9maXJlc3RvcmVwcm90bzJqc29uL2RhdGFiYXNlcy8oZGVmYXVsdCkvZG9jdW1lbnRzL3Rlc3RkYXRhLzdRb2twcUVYUTVMY21qRkQ4cHpQEmwKCG1hcEZpZWxkEmAyXgoYCgtudW1iZXJGaWVsZBIJGTMzMzMzM/M/ChIKDGJvb2xlYW5GaWVsZBICCAAKDwoJbnVsbEZpZWxkEgJYAAodCgtzdHJpbmdGaWVsZBIOigELc3RyaW5nVmFsdWUaDAjCjfCuBhCYndTMASIMCMKN8K4GEJid1MwB"
+  },
+  "output": {
+    "value": {
+      "mapField": {
+        "booleanField": false,
+        "nullField": null,
+        "numberField": 1.2,
+        "stringField": "stringValue"
+      }
+    }
+  }
+}

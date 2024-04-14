@@ -1,0 +1,9 @@
+{
+  "input": {
+    "protocolBuffer": "CpUBClhwcm9qZWN0cy9maXJlc3RvcmVwcm90bzJqc29uL2RhdGFiYXNlcy8oZGVmYXVsdCkvZG9jdW1lbnRzL3Rlc3RkYXRhL0hVdDI0cUdMcnY1VWNXMkppQnJoEh4KCXN0cmluZ0tleRIRigEObmV3U3RyaW5nVmFsdWUaDAieke+uBhCYoOvBAiILCLSI9a4GEJjzywMSkwEKWHByb2plY3RzL2ZpcmVzdG9yZXByb3RvMmpzb24vZGF0YWJhc2VzLyhkZWZhdWx0KS9kb2N1bWVudHMvdGVzdGRhdGEvSFV0MjRxR0xydjVVY1cySmlCcmgSGwoJc3RyaW5nS2V5Eg6KAQtzdHJpbmdWYWx1ZRoMCJ6R764GEJig68ECIgwInpHvrgYQmKDrwQIaCwoJc3RyaW5nS2V5"
+  },
+  "output": {
+    "value": { "stringKey": "newStringValue" },
+    "oldValue": { "stringKey": "stringValue" }
+  }
+}
