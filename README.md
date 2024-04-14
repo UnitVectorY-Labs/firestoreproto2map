@@ -10,9 +10,15 @@ This library takes the Protocol Buffer sent from Firestore for a document and co
 
 ## Getting Started
 
-This library requires Java 17.
+This library requires Java 17 and is available in the Maven Central Repository:
 
-This library is still under development.
+```xml
+<dependency>
+    <groupId>com.unitvectory</groupId>
+    <artifactId>firestoreproto2map</artifactId>
+    <version>0.0.1</version>
+</dependency>
+```
 
 ## Usage
 
