@@ -1,3 +1,5 @@
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![codecov](https://codecov.io/gh/UnitVectorY-Labs/firestoreproto2map/graph/badge.svg?token=1PXHW608HT)](https://codecov.io/gh/UnitVectorY-Labs/firestoreproto2map)
+
 # firestoreproto2map
 
 Helper library to convert Firestore Protocol Buffer from event to map that can be used by Firestore
