@@ -38,11 +38,14 @@ public class FirestoreProto2MapTest extends JsonNodeParamUnit {
             .registerModule(new SimpleModule().addSerializer(new ByteStringSerializer())
                     .addSerializer(new DocumentReferenceSerializer()));
 
-    private final FirestoreProto2Map firestoreProto2Map;
+    private final FirestoreProto2Map firestoreProto2MapWithReference;
+
+    private final FirestoreProto2Map firestoreProto2MapNoReference;
 
     public FirestoreProto2MapTest() {
         super(JsonParamUnitConfig.builder().mapper(mapper).build());
-        this.firestoreProto2Map = new FirestoreProto2Map(new MockedValueToDocumentReferenceMapper());
+        this.firestoreProto2MapWithReference = new FirestoreProto2Map(new MockedValueToDocumentReferenceMapper());
+        this.firestoreProto2MapNoReference = new FirestoreProto2Map();
     }
 
     @ParameterizedTest
@@ -60,6 +63,13 @@ public class FirestoreProto2MapTest extends JsonNodeParamUnit {
 
             ObjectNode output = mapper.createObjectNode();
 
+            FirestoreProto2Map firestoreProto2Map = null;
+            if (input.has("valueToDocumentReferenceMapper")) {
+                firestoreProto2Map = this.firestoreProto2MapWithReference;
+            } else {
+                firestoreProto2Map = this.firestoreProto2MapNoReference;
+            }
+
             if (documentEventData.hasOldValue()) {
                 Map<String, Object> map = firestoreProto2Map.convert(documentEventData.getOldValue());
                 output.putPOJO("oldValue", map);
@@ -69,8 +79,6 @@ public class FirestoreProto2MapTest extends JsonNodeParamUnit {
                 Map<String, Object> map = firestoreProto2Map.convert(documentEventData.getValue());
                 output.putPOJO("value", map);
             }
-
-            System.out.println(mapper.writerWithDefaultPrettyPrinter().writeValueAsString(output));
 
             return output;
         } catch (Exception e) {

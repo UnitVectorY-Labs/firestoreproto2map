@@ -1,0 +1,33 @@
+{
+  "input": {
+    "protocolBuffer": "CoEDClhwcm9qZWN0cy9maXJlc3RvcmVwcm90bzJqc29uL2RhdGFiYXNlcy8oZGVmYXVsdCkvZG9jdW1lbnRzL3Rlc3RkYXRhL01tcVdtODRJR1lxRmZKd0djbUxOEogCCgphcnJheUZpZWxkEvkBSvYBCg5SDAj1+vSuBhDAq7ihAgoCQgAKWipYcHJvamVjdHMvZmlyZXN0b3JlcHJvdG8yanNvbi9kYXRhYmFzZXMvKGRlZmF1bHQpL2RvY3VtZW50cy90ZXN0ZGF0YS9hemU5QmdvUlVZNW95U1l1czVHRwqDATKAAQoRCgtudW1iZXJGaWVsZBICEHsKVAoKYXJyYXlGaWVsZBJGSkQKDVILCND79K4GEMCZsisKMzIxChgKC251bWJlckZpZWxkEgkZsHJoke18vz8KFQoLc3RyaW5nRmllbGQSBooBA1hZWgoVCgtzdHJpbmdGaWVsZBIGigEDQUJDGgwIhfz0rgYQmMiUpQEiDAiF/PSuBhCYyJSlAQ=="
+  },
+  "output": {
+    "value": {
+      "arrayField": [
+        {
+          "seconds": 1708998005,
+          "nanos": 607000000
+        },
+        {
+          "latitude": 0.0,
+          "longitude": 0.0
+        },
+        {
+          "numberField": 123,
+          "arrayField": [
+            {
+              "seconds": 1708998096,
+              "nanos": 91000000
+            },
+            {
+              "numberField": 0.123,
+              "stringField": "XYZ"
+            }
+          ],
+          "stringField": "ABC"
+        }
+      ]
+    }
+  }
+}

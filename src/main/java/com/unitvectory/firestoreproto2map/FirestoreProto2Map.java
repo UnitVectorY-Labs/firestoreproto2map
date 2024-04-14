@@ -139,7 +139,7 @@ public class FirestoreProto2Map {
         for (Value value : document) {
             switch (value.getValueTypeCase()) {
                 case ARRAY_VALUE:
-                    list.add(convertArray(value.getArrayValue().getValuesList()));
+                    // In Firestore arrays cannot contain arrays
                     break;
                 case BOOLEAN_VALUE:
                     list.add(value.getBooleanValue());

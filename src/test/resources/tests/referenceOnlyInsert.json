@@ -1,6 +1,7 @@
 {
   "input": {
-    "protocolBuffer": "CuQBClhwcm9qZWN0cy9maXJlc3RvcmVwcm90bzJqc29uL2RhdGFiYXNlcy8oZGVmYXVsdCkvZG9jdW1lbnRzL3Rlc3RkYXRhL211WXpoTGRxT0JOMXFpdzJmWlE1EmwKDnJlZmVyZW5jZUZpZWxkEloqWHByb2plY3RzL2ZpcmVzdG9yZXByb3RvMmpzb24vZGF0YWJhc2VzLyhkZWZhdWx0KS9kb2N1bWVudHMvdGVzdGRhdGEvYXplOUJnb1JVWTVveVNZdXM1R0caDAjC9/SuBhCYzMrSAyIMCML39K4GEJjMytID"
+    "protocolBuffer": "CuQBClhwcm9qZWN0cy9maXJlc3RvcmVwcm90bzJqc29uL2RhdGFiYXNlcy8oZGVmYXVsdCkvZG9jdW1lbnRzL3Rlc3RkYXRhL211WXpoTGRxT0JOMXFpdzJmWlE1EmwKDnJlZmVyZW5jZUZpZWxkEloqWHByb2plY3RzL2ZpcmVzdG9yZXByb3RvMmpzb24vZGF0YWJhc2VzLyhkZWZhdWx0KS9kb2N1bWVudHMvdGVzdGRhdGEvYXplOUJnb1JVWTVveVNZdXM1R0caDAjC9/SuBhCYzMrSAyIMCML39K4GEJjMytID",
+    "valueToDocumentReferenceMapper": true
   },
   "output": {
     "value": {
