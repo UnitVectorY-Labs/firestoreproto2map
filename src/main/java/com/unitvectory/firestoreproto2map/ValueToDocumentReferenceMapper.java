@@ -13,7 +13,6 @@
  */
 package com.unitvectory.firestoreproto2map;
 
-import com.google.events.cloud.firestore.v1.Value;
 import com.google.cloud.firestore.DocumentReference;
 
 /**
@@ -26,11 +25,12 @@ import com.google.cloud.firestore.DocumentReference;
 public interface ValueToDocumentReferenceMapper {
 
     /**
-     * Convert the Eventarc Value for a reference to a Firestore DocumentReference
-     * that can be used to insert into Firestore.
+     * Convert the Eventarc Value reference path for a reference to a Firestore
+     * DocumentReference that can be used to insert into Firestore.
      * 
-     * @param value the reference value
+     * @param referenceValue the full reference value
+     * @param documentPath   the document path component from the reference value
      * @return the DocumentReference
      */
-    DocumentReference convert(Value value);
+    DocumentReference convert(String referenceValue, String documentPath);
 }

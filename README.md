@@ -39,13 +39,13 @@ public class FirebaseFirestore implements CloudEventsFunction {
     if (documentEventData.hasOldValue()) {
       Map<String, Object> oldValueMap = firestoreProto2Map.convert(documentEventData.getOldValue());
 
-      // Map compatible to be insert into Firestore
+      // Map represents object that can be inserted into Firestore
     }
 
     if (documentEventData.hasValue()) {
       Map<String, Object> valueMap = firestoreProto2Map.convert(documentEventData.getValue());
 
-      // Map compatible to be insert into Firestore
+      // Map represents object that can be inserted into Firestore
     }
   }
 }
@@ -54,3 +54,15 @@ public class FirebaseFirestore implements CloudEventsFunction {
 ## Reference Limitation
 
 Firestore supports reference documents, these are handled different from the other field types and require a `DocumentReference` object which requires the Firestore SDK to get that object.
+
+```java
+Firestore firestore  = FirestoreOptions.getDefaultInstance().getService();
+
+// This allows DocumentReference's to be handled
+FirestoreProto2Map converter = new FirestoreProto2Map(new ValueToDocumentReferenceMapper() {
+    @Override
+    public DocumentReference convert(String referenceValue, String documentPath) {
+        return firestore.document(documentPath);
+    }
+});
+```

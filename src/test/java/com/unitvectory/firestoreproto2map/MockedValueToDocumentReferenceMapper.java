@@ -18,7 +18,6 @@ import static org.mockito.Mockito.when;
 import org.mockito.Mockito;
 
 import com.google.cloud.firestore.DocumentReference;
-import com.google.events.cloud.firestore.v1.Value;
 
 /**
  * Conversation that utilizes Mockito to mock the conversion of a Firestore
@@ -29,12 +28,9 @@ import com.google.events.cloud.firestore.v1.Value;
 public class MockedValueToDocumentReferenceMapper implements ValueToDocumentReferenceMapper {
 
     @Override
-    public DocumentReference convert(Value value) {
+    public DocumentReference convert(String referenceValue, String path) {
         DocumentReference documentReference = Mockito.mock(DocumentReference.class);
-
-        String referenceValue = value.getReferenceValue();
         when(documentReference.getId()).thenReturn(referenceValue);
-
         return documentReference;
     }
 

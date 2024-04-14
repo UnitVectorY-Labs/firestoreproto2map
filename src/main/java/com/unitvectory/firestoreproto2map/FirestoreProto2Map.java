@@ -18,8 +18,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import com.google.cloud.firestore.Blob;
+import com.google.cloud.firestore.DocumentReference;
 import com.google.cloud.firestore.GeoPoint;
 import com.google.events.cloud.firestore.v1.Document;
 import com.google.events.cloud.firestore.v1.Value;
@@ -32,6 +35,8 @@ import com.google.type.LatLng;
  * @author Jared Hatfield (UnitVectorY Labs)
  */
 public class FirestoreProto2Map {
+
+    private static final Pattern DOCUMENT_PATH_PATTERN = Pattern.compile("projects/.*/databases/.*/documents/(.+)");
 
     private ValueToDocumentReferenceMapper valueToDocumentReferenceMapper;
 
@@ -110,7 +115,7 @@ public class FirestoreProto2Map {
                     break;
                 case REFERENCE_VALUE:
                     if (this.valueToDocumentReferenceMapper != null) {
-                        map.put(key, this.valueToDocumentReferenceMapper.convert(value));
+                        map.put(key, convertReference(value));
                     }
                     break;
                 case STRING_VALUE:
@@ -165,7 +170,7 @@ public class FirestoreProto2Map {
                     break;
                 case REFERENCE_VALUE:
                     if (this.valueToDocumentReferenceMapper != null) {
-                        list.add(this.valueToDocumentReferenceMapper.convert(value));
+                        list.add(convertReference(value));
                     }
                     break;
                 case STRING_VALUE:
@@ -215,5 +220,33 @@ public class FirestoreProto2Map {
     private com.google.cloud.Timestamp convert(com.google.protobuf.Timestamp timestamp) {
         return com.google.cloud.Timestamp.ofTimeSecondsAndNanos(timestamp.getSeconds(),
                 timestamp.getNanos());
+    }
+
+    /**
+     * Conert the reference value that contains a reference value to a document
+     * reference using the implementation of the interface to perform the conversion
+     * 
+     * @param value the value
+     * @return the document reference
+     */
+    private DocumentReference convertReference(Value value) {
+        String referenceValue = value.getReferenceValue();
+        String documentPath = getDocumentPath(referenceValue);
+        return this.valueToDocumentReferenceMapper.convert(referenceValue, documentPath);
+    }
+
+    /**
+     * Extract the document path from a full Firestore resource reference value
+     * 
+     * @param referenceValue the reference value for the resource
+     * @return the document path
+     */
+    private String getDocumentPath(String referenceValue) {
+        Matcher matcher = DOCUMENT_PATH_PATTERN.matcher(referenceValue);
+        if (matcher.find()) {
+            return matcher.group(1);
+        } else {
+            return null;
+        }
     }
 }
