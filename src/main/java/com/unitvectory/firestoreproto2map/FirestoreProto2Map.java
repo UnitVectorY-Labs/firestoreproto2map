@@ -19,6 +19,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
+import com.google.cloud.firestore.Blob;
 import com.google.cloud.firestore.GeoPoint;
 import com.google.events.cloud.firestore.v1.Document;
 import com.google.events.cloud.firestore.v1.Value;
@@ -90,7 +91,7 @@ public class FirestoreProto2Map {
                     map.put(key, value.getBooleanValue());
                     break;
                 case BYTES_VALUE:
-                    map.put(key, value.getBytesValue());
+                    map.put(key, convert(value.getBytesValue()));
                     break;
                 case DOUBLE_VALUE:
                     map.put(key, value.getDoubleValue());
@@ -145,7 +146,7 @@ public class FirestoreProto2Map {
                     list.add(value.getBooleanValue());
                     break;
                 case BYTES_VALUE:
-                    list.add(value.getBytesValue());
+                    list.add(convert(value.getBytesValue()));
                     break;
                 case DOUBLE_VALUE:
                     list.add(value.getDoubleValue());
@@ -180,6 +181,17 @@ public class FirestoreProto2Map {
         }
 
         return list;
+    }
+
+    /**
+     * Convert the Protocol Buffer representation of the Blob to the Blob
+     * representation needed to set a Firestore database record
+     * 
+     * @param bytesValue the Protocol Buffer Blob
+     * @return the Firestore Blob
+     */
+    private Blob convert(com.google.protobuf.ByteString bytesValue) {
+        return Blob.fromBytes(bytesValue.toByteArray());
     }
 
     /**

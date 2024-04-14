@@ -19,27 +19,26 @@ import java.util.Base64;
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.databind.SerializerProvider;
 import com.fasterxml.jackson.databind.ser.std.StdSerializer;
-import com.google.protobuf.ByteString;
+import com.google.cloud.firestore.Blob;
 
 /**
- * Customized serializer for the ByteString class for conversation to JSON to
+ * Customized serializer for the Blob class for conversation to JSON to
  * match the test cases.
  * 
  * @author Jared Hatfield (UnitVectorY Labs)
  */
-public class ByteStringSerializer extends StdSerializer<ByteString> {
+public class BlobSerializer extends StdSerializer<Blob> {
 
-    public ByteStringSerializer() {
-        super(ByteString.class);
+    public BlobSerializer() {
+        super(Blob.class);
     }
 
     @Override
-    public void serialize(ByteString value, JsonGenerator jsonGenerator,
+    public void serialize(Blob value, JsonGenerator jsonGenerator,
             SerializerProvider serializers) throws IOException {
         jsonGenerator.writeStartObject();
-
         jsonGenerator.writeStringField("_byteString",
-                Base64.getEncoder().encodeToString(value.toByteArray()));
+                Base64.getEncoder().encodeToString(value.toBytes()));
         jsonGenerator.writeEndObject();
     }
 }

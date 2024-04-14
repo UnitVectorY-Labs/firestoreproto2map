@@ -35,7 +35,7 @@ import com.unitvectory.jsonparamunit.JsonParamUnitConfig;
 public class FirestoreProto2MapTest extends JsonNodeParamUnit {
 
     private static final ObjectMapper mapper = new ObjectMapper()
-            .registerModule(new SimpleModule().addSerializer(new ByteStringSerializer())
+            .registerModule(new SimpleModule().addSerializer(new BlobSerializer())
                     .addSerializer(new DocumentReferenceSerializer()));
 
     private final FirestoreProto2Map firestoreProto2MapWithReference;
