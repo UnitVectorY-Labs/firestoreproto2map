@@ -1,0 +1,18 @@
+{
+    "input": {
+        "protocolBuffer": "CtwBCkxwcm9qZWN0cy9maXJlc3RvcmVwcm90bzJqc29uL2RhdGFiYXNlcy8oZGVmYXVsdCkvZG9jdW1lbnRzL2VtYmVkZGluZ3Mvc2FtcGxlEhIKCG1ldGFkYXRhEgaKAQNmb28SXgoPZW1iZWRkaW5nX2ZpZWxkEksySQoZCghfX3R5cGVfXxINigEKX192ZWN0b3JfXwosCgV2YWx1ZRIjSiEKCRkAAAAAAADwPwoJGQAAAAAAAABACgkZAAAAAAAACEAaCwiw3P6xBhCYwLIRIgsIsNz+sQYQmMCyEQ=="
+    },
+    "output": {
+        "value": {
+            "metadata": "foo",
+            "embedding_field": {
+                "__type__": "__vector__",
+                "value": [
+                    1.0,
+                    2.0,
+                    3.0
+                ]
+            }
+        }
+    }
+}
