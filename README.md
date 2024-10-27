@@ -37,19 +37,19 @@ public class FirebaseFirestore implements CloudEventsFunction {
 
   @Override
   public void accept(CloudEvent event) throws InvalidProtocolBufferException {
-    DocumentEventData firestorEventData = DocumentEventData.parseFrom(event.getData().toBytes());
+    DocumentEventData firestoreEventData = DocumentEventData.parseFrom(event.getData().toBytes());
     
     // This will not handle DocumentReference attributes
     FirestoreProto2Map firestoreProto2Map = new FirestoreProto2Map();
 
-    if (documentEventData.hasOldValue()) {
-      Map<String, Object> oldValueMap = firestoreProto2Map.convert(documentEventData.getOldValue());
+    if (firestoreEventData.hasOldValue()) {
+      Map<String, Object> oldValueMap = firestoreProto2Map.convert(firestoreEventData.getOldValue());
 
       // Map represents object that can be inserted into Firestore
     }
 
-    if (documentEventData.hasValue()) {
-      Map<String, Object> valueMap = firestoreProto2Map.convert(documentEventData.getValue());
+    if (firestoreEventData.hasValue()) {
+      Map<String, Object> valueMap = firestoreProto2Map.convert(firestoreEventData.getValue());
 
       // Map represents object that can be inserted into Firestore
     }
