@@ -51,7 +51,7 @@
         <dependency>
             <groupId>com.google.cloud</groupId>
             <artifactId>google-cloud-firestore</artifactId>
-            <version>3.30.7</version>
+            <version>3.30.8</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
