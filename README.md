@@ -2,7 +2,7 @@
 
 # firestoreproto2map
 
-Java helper library to convert Firestore Protocol Buffer from event to map that can be used by Firestore
+Helper library to convert Firestore Protocol Buffer from event to map that can be used by Firestore
 
 ## Purpose
 

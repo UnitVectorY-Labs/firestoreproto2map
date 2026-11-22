@@ -8,8 +8,48 @@ config:
   maven:
     group_id: com.unitvectory
     artifact_id: firestoreproto2map
+    javadoc: true
   release_github: true
   status: active
+  osv: sarif
   codecov:
     enabled: true
     token: 1PXHW608HT
+  docs:
+    enabled: false
+  clip4llm:
+    exclude:
+      - target
+      - .github/**
+  gitignore:
+    - .vscode
+    - /.apt_generated_tests/
+    - '*.tmp'
+    - '*.bak'
+    - '*.swp'
+    - '*.ctxt'
+    - '*.zip'
+    - '*.tar.gz'
+    - '*.rar'
+    - '*~.nib'
+    - tmp/
+    - .mtj.tmp/
+    - local.properties
+    - .externalToolBuilders/
+    - '*.launch'
+    - .loadpath
+    - .recommenders/
+    - .buildpath
+    - .cproject
+    - .autotools
+    - .pydevproject
+    - .target
+    - .tern-project
+    - .texlipse
+    - .springBeans
+    - .cache-main
+    - .scala_dependencies
+    - .worksheet
+    - .sts4-cache/
+    - .idea_modules/
+    - atlassian-ide-plugin.xml
