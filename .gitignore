@@ -20,20 +20,6 @@ buildNumber.properties
 .mvn/timing.properties
 .mvn/wrapper/maven-wrapper.jar
 
-### Java IDEs ###
-.classpath
-.project
-.settings/
-.metadata
-.factorypath
-.apt_generated/
-.apt_generated_tests/
-.idea/
-*.iml
-*.iws
-/out/
-/bin/
-
 # https://www.toptal.com/developers/gitignore/api/macos
 ### macOS ###
 # General
@@ -136,34 +122,4 @@ $RECYCLE.BIN/
 *.log
 
 ## Additional Ignore Patterns
-.vscode
-/.apt_generated_tests/
-*.tmp
-*.bak
-*.swp
-*.ctxt
-*.zip
-*.tar.gz
-*.rar
-*~.nib
-tmp/
-.mtj.tmp/
-local.properties
-.externalToolBuilders/
-*.launch
-.loadpath
-.recommenders/
-.buildpath
-.cproject
-.autotools
-.pydevproject
-.target
-.tern-project
-.texlipse
-.springBeans
-.cache-main
-.scala_dependencies
-.worksheet
-.sts4-cache/
-.idea_modules/
-atlassian-ide-plugin.xml
+.vscode/
