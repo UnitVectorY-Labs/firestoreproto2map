@@ -12,9 +12,6 @@ config:
   release_github: true
   status: active
   osv: sarif
-  codecov:
-    enabled: true
-    token: 1PXHW608HT
   docs:
     enabled: false
   clip4llm:
